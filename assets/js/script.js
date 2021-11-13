@@ -24,26 +24,26 @@ function generatePassword() {
   if (passUpperCase) {
     var passUpperCase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
   }
-  if (passUpperCase = false) {
+  if (passUpperCase === false) {
     var passUpperCase = [""];
   }
   if (passLowerCase) {
     var passLowerCase = ["abcdefghijklmnopqrstuvwxyz"]
   }
-  if (passLowerCase = false) {
+  if (passLowerCase === false) {
     var passLowerCase = [""];
   }
   if (passNum) {
     var passNum = ["0123456789"]
   }
-  if (passNum = false) {
+  if (passNum === false) {
     var passNum = [""]
   }
   if (passSpecChar) {
     var passSpecChar = ["!@#$%^&*()"]
   }
-  if (passNum = false) {
-    var passNum = [""]
+  if (passSpecChar === false) {
+    var passSpecChar = [""]
   }
 
   var randomCharacters = passUpperCase + passLowerCase + passNum + passSpecChar
