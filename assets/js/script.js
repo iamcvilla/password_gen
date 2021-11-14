@@ -4,18 +4,20 @@ var generateBtn = document.querySelector("#generate");
 // Assignment code here
 function generatePassword() {
 
+// Prompts asking user to choose password length
   var passLength = prompt("Please choose the length of your password? 8 to 128 characters.");
   if (passLength < 8 || passLength > 128) {
     alert("Please select a number between 8 and 128");
     return generatePassword();
   }
+// Prompts asking user password critera
   if (passLength >= 8 && passLength <= 128) {
     var passUpperCase = confirm("Would you like to include Upper Case Letters?");
     var passLowerCase = confirm("Would you like to include Lower Case Letters?");
     var passNum = confirm("Would you like to include Numbers?");
     var passSpecChar = confirm("Would you like to include Special Characters?");
   }
-
+// if user selects cancel on all window prompts, they will be asked to reselect password criteria
   if (passUpperCase == false && passLowerCase == false && passNum == false && passSpecChar == false) {
     alert("Please reselect your password criteria.");
     return generatePassword();
@@ -54,7 +56,7 @@ function generatePassword() {
     password += trueRandom
   }
 
-  //returns the generated password
+//returns the generated password
   return password
 }
 // Write password to the #password input
