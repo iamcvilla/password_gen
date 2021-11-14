@@ -11,6 +11,8 @@ A website that offers the user to generate
 ## Website
 https://iamcvilla.github.io/password_gen/
 
+## Screenshots
+
 ## Contribution
 Made with ❤️ by Calvin Villanueva
 
