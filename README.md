@@ -1,7 +1,7 @@
 # password_gen
 
 ## Purpose
-A website that offers the user to generate 
+A website that offers the user to generate a secure password.
 
 ## Built With
 * HTML
